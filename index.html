@@ -5,8 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <!-- CRIAÇÃO DE UM FORMULÁRIO -->
+    <fieldset>
+        <legend>Dados Pessoais</legend>
+            Nome:<input type="text" class="caixa_larga" id="nome"><br>
+            Endereço:<input type="text" class="caixa_larga" id="endereco"><br>
+            Cidade:<input type="text" class="caixa_larga" id="cidade">
+            Estado:<select id="estado" class="estado">
+                <option disabled selected value=""> -- Selecione -- </option>
+                <option>Acre</option>
+                <option>Bahia</option>
+                <option>São Paulo</option>
+                <option>Paraná</option>
+                <option>Santa Catarina</option>
+            </select>
+    </fieldset>
+
+    <fieldset>
+        <legend>Dados Profissionais</legend>
+            Natureza do Cargo:<br>
+            <input type="radio" class="cargos" id="gerencia" name="cargos">Gerência
+            <input type="radio" class="cargos" id="financeiro" name="cargos">Financeiro
+            <input type="radio" class="cargos" id="recepcao" name="cargos">Recepção
+            <input type="radio" class="cargos" id="administracao" name="cargos">Administração
+            <input type="radio" class="cargos" id="juridico" name="cargos">Jurídico<br>
+            <br>
+            Área de Interesse:<br>
+            <input type="checkbox" class="areas" id="computacao">Computação
+            <input type="checkbox" class="areas" id="biologia">Biologia
+            <input type="checkbox" class="areas" id="meio_ambiente">Meio Ambiente
+            <input type="checkbox" class="areas" id="engenharia">Engenharia
+            <input type="checkbox" class="areas" id="historia">História<br>
+            <br>
+            Mini-currículo: (veja
+            <a href="https://zety.com/br/blog/como-fazer-curriculo" target="_blank">dicas</a> de como fazer seu currículo)<br>
+            <textarea class="texto" id="curriculo"></textarea>
+    </fieldset><br>
+    <div class="botoes">
+    <button class="botao">Enviar</button>
+    <button class="botao">Limpar</button>
+    </div>
 </body>
 </html>
