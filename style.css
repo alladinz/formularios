@@ -60,3 +60,20 @@ legend{
     border-color: aliceblue;
     border-style: solid;
 }
+.botao:hover{
+    background-color: rgba(223, 223, 223, 0.596);
+    border-color: rgba(223, 223, 223, 0.596);
+}
+.square{
+    margin-top: 10px;
+    padding: 20px;
+    height: 50px;
+    width: 50px;
+    content: "";
+    background-color: brown;
+    animation: vai_vai 1s alternate infinite;
+}
+@keyframes vai_vai{
+    0%      {margin-left:0px;}
+    100%    {margin-left:94%; background-color: blueviolet; rotate: 360deg;}
+}

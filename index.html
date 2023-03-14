@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <div class="square"></div>
     <!-- CRIAÇÃO DE UM FORMULÁRIO -->
     <fieldset>
         <legend>Dados Pessoais</legend>
@@ -46,7 +48,26 @@
     </fieldset><br>
     <div class="botoes">
     <button class="botao">Enviar</button>
-    <button class="botao">Limpar</button>
+    <button onclick="LimpaTudo();" class="botao">Limpar</button>
     </div>
 </body>
+    <script>
+        function LimpaTudo(){
+            nome.value = "";
+            endereco.value = "";
+            cidade.value = "";
+            curriculo.value = "";
+            gerencia.checked = false;
+            financeiro.checked = false;
+            recepcao.checked = false;
+            administracao.checked = false;
+            juridico.checked = false;
+            computacao.checked = false;
+            biologia.checked = false;
+            meio_ambiente.checked = false;
+            engenharia.checked = false;
+            historia.checked = false;
+            document.getElementById('estado').getElementsByTagName('option')[0].selected = 'selected'
+        }
+    </script>
 </html>
